@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(90deg, #1a2a6c 0%, #b21f1f 50%, #fdbb2d 100%);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 5vh;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 2rem rgba(255, 255, 255, 0.8), 0 0 3rem rgba(255, 255, 255, 0.6), 0 0 4rem rgba(255, 255, 255, 0.4);
+}
+
+form {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.7), 0 0 2rem rgba(255, 255, 255, 0.5), 0 0 3rem rgba(255, 255, 255, 0.3);
+}
+
+input[type="number"] {
+    width: 85%;
+    padding: 10px;
+    border: none;
+    border-bottom: 0.1rem solid white;
+    background: transparent;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-bottom: 0.2rem solid #ff6600;
+}
+
+button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: linear-gradient(45deg, #ff0066, #ff6600);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0.5rem;
+    box-shadow: 0 0 1rem rgba(255, 0, 102, 0.7), 0 0 2rem rgba(255, 102, 0, 0.5);
+    transition: background 0.5s, box-shadow 0.5s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff6600, #ff0066);
+    box-shadow: 0 0 2rem rgba(255, 0, 102, 0.7), 0 0 3rem rgba(255, 102, 0, 0.5);
+}
+
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 1rem auto;
+    height: 5px;
+}
+
+th {
+    padding: 10px;
+    border: 0.1rem solid white;
+}
+td {
+    padding: 1px;
+    border: 0.1rem solid white;
+}
+
+th {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+td input {
+    width: 100%;
+    padding: 0.3rem;
+    border: none;
+    border-bottom: 0.1rem solid white;
+    background: transparent;
+    color: white;
+    font-size: 0.9rem;
+}
+
+td input:focus {
+    outline: none;
+    border-bottom: 0.2rem solid #ff6600;
+}
+
+#result {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-shadow: 0 0 1rem rgba(255, 255, 255, 0.7), 0 0 2rem rgba(255, 255, 255, 0.5);
+}

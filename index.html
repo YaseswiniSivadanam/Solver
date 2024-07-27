@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fractional Knapsack Solver</title>
+    <link rel="stylesheet" type="text/css" href="FractionalKnapsack.css">
+</head>
+<body>
+    <h1>Fractional Knapsack Solver</h1>
+    <form id="knapsack-form">
+        <input type="number" id="items" name="items" placeholder="Enter Number Of Items"><br>
+        <input type="number" id="capacity" name="capacity" placeholder="Enter Knapsack Capacity" required><br>
+
+        <button type="button" id="generate-table">GENERATE TABLE</button>
+        <button type="submit">Solve</button>
+    </form>
+
+    <table id="knapsack-table">
+        <thead>
+            <tr>
+                <th>Weights</th>
+                <th>Profits</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+
+    <div id="result"></div>
+    <script>
+        document.getElementById("knapsack-table").style.display = "none";
+
+        document.getElementById("generate-table").addEventListener("click", function() {
+            document.getElementById("knapsack-table").style.display = "table";
+        });
+    </script>
+
+    <script src="fractional_knapsack.js"></script>
+</body>
+</html>
